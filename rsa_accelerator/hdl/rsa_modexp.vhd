@@ -92,7 +92,7 @@ architecture Behavioral of rsa_modexp is
     
     --counter signals
     signal count_overflow, load_counter, dec_count: std_logic;
-    signal exp_iteration_cnt: unsigned(7 downto 0);
+    signal exp_iteration_cnt: unsigned(8 downto 0);
     
     -- E_shifter signals
     signal E_load, E_shift, E_msb: std_logic;
@@ -131,10 +131,10 @@ begin
     begin
         if (reset_n = '0') then
             --exp_iteration_cnt <= (others => '0');
-            exp_iteration_cnt <= to_unsigned(C_BLOCK_SIZE-1,8);
+            exp_iteration_cnt <= to_unsigned(C_BLOCK_SIZE,9);
         elsif rising_edge(clk) then
             if(load_counter = '1') then
-                exp_iteration_cnt <= to_unsigned(C_BLOCK_SIZE-1,8);
+                exp_iteration_cnt <= to_unsigned(C_BLOCK_SIZE,9);
             elsif (dec_count = '1') then
                 exp_iteration_cnt <= exp_iteration_cnt - 1;
             end if;

@@ -163,7 +163,7 @@ end process clocking;
         end if;
         
     when SEND_2 =>
-        msgin_data  <=  std_logic_vector(to_unsigned(52, 256));
+        msgin_data  <=  std_logic_vector(to_unsigned(2564, 256));
         msgin_valid  <= '1';
         msgin_last <= '0';
                 
@@ -174,7 +174,7 @@ end process clocking;
         end if;
     
     when SEND_3 =>
-        msgin_data  <=  std_logic_vector(to_unsigned(847, 256));
+        msgin_data  <=  std_logic_vector(to_unsigned(2465451, 256));
         msgin_valid  <= '1';
         msgin_last <= '0';
                 
