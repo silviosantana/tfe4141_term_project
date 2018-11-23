@@ -92,11 +92,11 @@ architecture rtl of rsa_core is
     signal monexp_msgout_ready_0, monexp_msgout_ready_1, monexp_msgout_ready_2, monexp_msgout_ready_3: std_logic; 
 
 begin
-  msgout_valid <= msgin_valid;   
-  msgin_ready  <= msgout_ready;
-  msgout_data  <= msgin_data xor key_n;
-  msgout_last  <= msgin_last;
-  rsa_status   <= (others => '0');
+  --msgout_valid <= msgin_valid;   
+  --msgin_ready  <= msgout_ready;
+  --msgout_data  <= msgin_data xor key_n;
+  --msgout_last  <= msgin_last;
+  --rsa_status   <= (others => '0');
   
 INPUT_DEMUX_COMB_PROC: process (in_count_sel, s_start_monexp, msgin_last)
 begin

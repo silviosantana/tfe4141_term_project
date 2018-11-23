@@ -76,6 +76,7 @@ begin
     r_mod_n     <=  std_logic_vector(to_unsigned(3, 256));
     r2_mod_n    <=  std_logic_vector(to_unsigned(9, 256));
     msgin_valid  <= '0';
+    msgout_ready  <= '0';
     reset_n <= '1';
     wait for 3*clock_period;
     
@@ -92,6 +93,7 @@ begin
     msgin_valid  <= '0';
     
     wait for 500*clock_period;
+    msgout_ready  <= '1';
 
     -- Put test bench stimulus code here
 
