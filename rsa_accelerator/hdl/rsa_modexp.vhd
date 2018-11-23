@@ -228,16 +228,17 @@ begin
     end process M2_COMB_PROC;
     
     --TODO instantiate MonPro
-    MonPro: entity work.dummy_monpro(Behavioral)
+    MonPro: entity work.MonPro
     port map( 
+          
+            clk           => clk,
             A             => w_m1,
             B             => w_m2,
-            start_prod    => EN_prod,
-            clk           => clk,
-            reset_n       => RST_prod,
-            
-            out_xor       =>  w_mon_pro_result,
-            valid_out     => prod_valid
+            n             => key_n,
+            P             => w_mon_pro_result,
+            Mon_Pro_en    => EN_prod,
+            global_reset  => RST_prod,
+            pro_valid     => prod_valid
         );
     
     --FSM

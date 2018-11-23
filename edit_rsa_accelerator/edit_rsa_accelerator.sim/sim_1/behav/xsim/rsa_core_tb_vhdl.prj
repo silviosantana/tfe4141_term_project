@@ -1,6 +1,8 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
-"../../../../../rsa_accelerator/hdl/dummy_monpro.vhd" \
+"../../../../edit_rsa_accelerator.srcs/sources_1/imports/Project/Montgomery_product.vhd" \
+"../../../../edit_rsa_accelerator.srcs/sources_1/imports/Project/Mon_Pro_control.vhd" \
+"../../../../edit_rsa_accelerator.srcs/sources_1/imports/new/MonPro.vhd" \
 "../../../../../rsa_accelerator/hdl/rsa_modexp.vhd" \
 "../../../../../rsa_accelerator/hdl/rsa_core.vhd" \
 "../../../../../rsa_accelerator/hdl/rsa_core_tb.vhd" \
