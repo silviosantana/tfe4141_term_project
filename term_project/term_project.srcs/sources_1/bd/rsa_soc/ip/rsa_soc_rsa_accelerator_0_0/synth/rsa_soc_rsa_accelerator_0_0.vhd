@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:rsa_accelerator:1.0
--- IP Revision: 19
+-- IP Revision: 20
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -140,7 +140,7 @@ ARCHITECTURE rsa_soc_rsa_accelerator_0_0_arch OF rsa_soc_rsa_accelerator_0_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF rsa_soc_rsa_accelerator_0_0_arch : ARCHITECTURE IS "rsa_soc_rsa_accelerator_0_0,rsa_accelerator,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF rsa_soc_rsa_accelerator_0_0_arch: ARCHITECTURE IS "rsa_soc_rsa_accelerator_0_0,rsa_accelerator,{x_ipProduct=Vivado 2018.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=rsa_accelerator,x_ipVersion=1.0,x_ipCoreRevision=19,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=8,C_S00_AXIS_TDATA_WIDTH=32,C_M00_AXIS_TDATA_WIDTH=32,C_M00_AXIS_START_COUNT=32,C_BLOCK_SIZE=256}";
+  ATTRIBUTE CORE_GENERATION_INFO OF rsa_soc_rsa_accelerator_0_0_arch: ARCHITECTURE IS "rsa_soc_rsa_accelerator_0_0,rsa_accelerator,{x_ipProduct=Vivado 2018.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=rsa_accelerator,x_ipVersion=1.0,x_ipCoreRevision=20,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=8,C_S00_AXIS_TDATA_WIDTH=32,C_M00_AXIS_TDATA_WIDTH=32,C_M00_AXIS_START_COUNT=32,C_BLOCK_SIZE=256}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF m00_axis_tready: SIGNAL IS "xilinx.com:interface:axis:1.0 M00_AXIS TREADY";

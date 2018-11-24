@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
--- Date        : Fri Nov 23 23:03:45 2018
+-- Date        : Fri Nov 23 23:03:43 2018
 -- Host        : DESKTOP-BRJQR8B running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/silvi/workspace/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ip/rsa_soc_auto_pc_0/rsa_soc_auto_pc_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top rsa_soc_auto_pc_0 -prefix
+--               rsa_soc_auto_pc_0_ rsa_soc_auto_pc_0_stub.vhdl
 -- Design      : rsa_soc_auto_pc_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1
