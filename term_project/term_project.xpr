@@ -70,23 +70,23 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="rsa_soc.bd" FileRelPathName="ip/rsa_soc_axi_dma_0_0/rsa_soc_axi_dma_0_0.xci">
+          <Proxy FileSetName="rsa_soc_axi_dma_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="rsa_soc.bd" FileRelPathName="ip/rsa_soc_axi_smc_0/rsa_soc_axi_smc_0.xci">
+          <Proxy FileSetName="rsa_soc_axi_smc_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="rsa_soc.bd" FileRelPathName="ip/rsa_soc_rst_ps7_0_100M_0/rsa_soc_rst_ps7_0_100M_0.xci">
           <Proxy FileSetName="rsa_soc_rst_ps7_0_100M_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="rsa_soc.bd" FileRelPathName="ip/rsa_soc_processing_system7_0_0/rsa_soc_processing_system7_0_0.xci">
           <Proxy FileSetName="rsa_soc_processing_system7_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="rsa_soc.bd" FileRelPathName="ip/rsa_soc_rsa_accelerator_0_0/rsa_soc_rsa_accelerator_0_0.xci">
-          <Proxy FileSetName="rsa_soc_rsa_accelerator_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="rsa_soc.bd" FileRelPathName="ip/rsa_soc_xbar_0/rsa_soc_xbar_0.xci">
           <Proxy FileSetName="rsa_soc_xbar_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="rsa_soc.bd" FileRelPathName="ip/rsa_soc_axi_smc_0/rsa_soc_axi_smc_0.xci">
-          <Proxy FileSetName="rsa_soc_axi_smc_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="rsa_soc.bd" FileRelPathName="ip/rsa_soc_axi_dma_0_0/rsa_soc_axi_dma_0_0.xci">
-          <Proxy FileSetName="rsa_soc_axi_dma_0_0"/>
+        <CompFileExtendedInfo CompFileName="rsa_soc.bd" FileRelPathName="ip/rsa_soc_rsa_accelerator_0_0/rsa_soc_rsa_accelerator_0_0.xci">
+          <Proxy FileSetName="rsa_soc_rsa_accelerator_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/rsa_soc/hdl/rsa_soc_wrapper.vhd">

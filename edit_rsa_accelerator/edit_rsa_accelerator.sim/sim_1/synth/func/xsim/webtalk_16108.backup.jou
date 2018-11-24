@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Nov 24 13:34:17 2018
+# Process ID: 16108
+# Current directory: C:/Users/silvi/workspace/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/synth/func/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/silvi/workspace/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/synth/func/xsim/xsim.dir/rsa_core_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/silvi/workspace/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/synth/func/xsim/webtalk.log
+# Journal file: C:/Users/silvi/workspace/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/synth/func/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/silvi/workspace/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/synth/func/xsim/xsim.dir/rsa_core_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace

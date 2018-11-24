@@ -1,6 +1,4 @@
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/silvi/workspace/tfe4141_term_project/rsa_accelerator/hdl/rsa_core.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity rsa_core
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/silvi/workspace/tfe4141_term_project/rsa_accelerator/hdl/rsa_modexp.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity rsa_modexp
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/silvi/workspace/tfe4141_term_project/rsa_accelerator/hdl/rsa_core_tb.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity rsa_core_tb
