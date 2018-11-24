@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="rsa_soc" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1543070667"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1543070667"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1543070667"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1543070667"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1543101631"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1543101631"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1543101631"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1543101631"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\rsa_soc_processing_system7_0_0\rsa_soc_processing_system7_0_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0"/>
@@ -55,14 +55,6 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\rsa_soc_rsa_accelerator_0_0\rsa_soc_rsa_accelerator_0_0.xci" Type="IP">
-        <Instance HierarchyPath="rsa/rsa_acc"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
       <File Name="synth\rsa_soc.vhd" Type="VHDL">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
@@ -71,6 +63,14 @@
       <File Name="sim\rsa_soc.vhd" Type="VHDL">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\rsa_soc_rsa_accelerator_0_0\rsa_soc_rsa_accelerator_0_0.xci" Type="IP">
+        <Instance HierarchyPath="rsa/rsa_acc"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\rsa_soc_auto_pc_0\rsa_soc_auto_pc_0.xci" Type="IP">

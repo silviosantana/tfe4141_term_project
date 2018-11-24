@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../rsa_accelerator/hdl/Montgomery_product.vhd" \
+"../../../../../rsa_accelerator/hdl/Mon_Pro_control.vhd" \
+"../../../../../rsa_accelerator/hdl/MonPro.vhd" \
+"../../../../../rsa_accelerator/hdl/rsa_core.vhd" \
+"../../../../../rsa_accelerator/hdl/rsa_modexp.vhd" \
+"../../../../edit_rsa_accelerator.srcs/sim_1/new/core_tbfkin2.vhd" \
+
+# Do not sort compile order
+nosort

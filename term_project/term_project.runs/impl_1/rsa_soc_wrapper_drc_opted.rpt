@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Sat Nov 24 15:50:39 2018
+| Date         : Sun Nov 25 00:29:18 2018
 | Host         : DESKTOP-BRJQR8B running 64-bit major release  (build 9200)
 | Command      : report_drc -file rsa_soc_wrapper_drc_opted.rpt -pb rsa_soc_wrapper_drc_opted.pb -rpx rsa_soc_wrapper_drc_opted.rpx
 | Design       : rsa_soc_wrapper
@@ -24,76 +24,15 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 6
-+-------------+----------+-------------------------------------------------------------+------------+
-| Rule        | Severity | Description                                                 | Violations |
-+-------------+----------+-------------------------------------------------------------+------------+
-| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 4          |
-| REQP-181    | Advisory | writefirst                                                  | 2          |
-+-------------+----------+-------------------------------------------------------------+------------+
+             Violations found: 2
++----------+----------+-------------+------------+
+| Rule     | Severity | Description | Violations |
++----------+----------+-------------+------------+
+| REQP-181 | Advisory | writefirst  | 2          |
++----------+----------+-------------+------------+
 
 2. REPORT DETAILS
 -----------------
-PLHOLDVIO-2#1 Warning
-Non-Optimal connections which could lead to hold violations  
-A LUT rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_0/i___7 is driving clock pin of 9 cells. This could lead to large hold time violations. First few involved cells are:
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_0/MonPro/Mon_Pro_controlpath/count_overflow_reg {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_0/MonPro/Mon_Pro_controlpath/counter_reg[0] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_0/MonPro/Mon_Pro_controlpath/counter_reg[1] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_0/MonPro/Mon_Pro_controlpath/counter_reg[2] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_0/MonPro/Mon_Pro_controlpath/counter_reg[3] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_0/MonPro/Mon_Pro_controlpath/counter_reg[4] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_0/MonPro/Mon_Pro_controlpath/counter_reg[5] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_0/MonPro/Mon_Pro_controlpath/counter_reg[6] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_0/MonPro/Mon_Pro_controlpath/counter_reg[7] {FDCE}
-
-Related violations: <none>
-
-PLHOLDVIO-2#2 Warning
-Non-Optimal connections which could lead to hold violations  
-A LUT rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_1/i___7 is driving clock pin of 9 cells. This could lead to large hold time violations. First few involved cells are:
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_1/MonPro/Mon_Pro_controlpath/count_overflow_reg {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_1/MonPro/Mon_Pro_controlpath/counter_reg[0] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_1/MonPro/Mon_Pro_controlpath/counter_reg[1] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_1/MonPro/Mon_Pro_controlpath/counter_reg[2] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_1/MonPro/Mon_Pro_controlpath/counter_reg[3] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_1/MonPro/Mon_Pro_controlpath/counter_reg[4] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_1/MonPro/Mon_Pro_controlpath/counter_reg[5] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_1/MonPro/Mon_Pro_controlpath/counter_reg[6] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_1/MonPro/Mon_Pro_controlpath/counter_reg[7] {FDCE}
-
-Related violations: <none>
-
-PLHOLDVIO-2#3 Warning
-Non-Optimal connections which could lead to hold violations  
-A LUT rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_2/i___7 is driving clock pin of 9 cells. This could lead to large hold time violations. First few involved cells are:
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_2/MonPro/Mon_Pro_controlpath/count_overflow_reg {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_2/MonPro/Mon_Pro_controlpath/counter_reg[0] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_2/MonPro/Mon_Pro_controlpath/counter_reg[1] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_2/MonPro/Mon_Pro_controlpath/counter_reg[2] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_2/MonPro/Mon_Pro_controlpath/counter_reg[3] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_2/MonPro/Mon_Pro_controlpath/counter_reg[4] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_2/MonPro/Mon_Pro_controlpath/counter_reg[5] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_2/MonPro/Mon_Pro_controlpath/counter_reg[6] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_2/MonPro/Mon_Pro_controlpath/counter_reg[7] {FDCE}
-
-Related violations: <none>
-
-PLHOLDVIO-2#4 Warning
-Non-Optimal connections which could lead to hold violations  
-A LUT rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_3/i___7 is driving clock pin of 9 cells. This could lead to large hold time violations. First few involved cells are:
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_3/MonPro/Mon_Pro_controlpath/count_overflow_reg {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_3/MonPro/Mon_Pro_controlpath/counter_reg[0] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_3/MonPro/Mon_Pro_controlpath/counter_reg[1] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_3/MonPro/Mon_Pro_controlpath/counter_reg[2] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_3/MonPro/Mon_Pro_controlpath/counter_reg[3] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_3/MonPro/Mon_Pro_controlpath/counter_reg[4] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_3/MonPro/Mon_Pro_controlpath/counter_reg[5] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_3/MonPro/Mon_Pro_controlpath/counter_reg[6] {FDCE}
-    rsa_soc_i/rsa/rsa_acc/U0/u_rsa_core/ModExp_3/MonPro/Mon_Pro_controlpath/counter_reg[7] {FDCE}
-
-Related violations: <none>
-
 REQP-181#1 Advisory
 writefirst  
 Synchronous clocking is detected for BRAM (rsa_soc_i/rsa/rsa_dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.

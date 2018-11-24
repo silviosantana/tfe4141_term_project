@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/silvi/workspace/tfe4141_term_project/term_project/term_project.runs/rsa_soc_rsa_accelerator_0_0_synth_1'
+HD_PWD='C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.runs/rsa_soc_rsa_accelerator_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

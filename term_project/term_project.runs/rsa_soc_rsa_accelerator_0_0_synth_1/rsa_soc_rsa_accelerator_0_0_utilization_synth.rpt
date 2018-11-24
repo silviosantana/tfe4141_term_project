@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Sat Nov 24 15:46:58 2018
+| Date         : Sun Nov 25 00:23:39 2018
 | Host         : DESKTOP-BRJQR8B running 64-bit major release  (build 9200)
 | Command      : report_utilization -file rsa_soc_rsa_accelerator_0_0_utilization_synth.rpt -pb rsa_soc_rsa_accelerator_0_0_utilization_synth.pb
 | Design       : rsa_soc_rsa_accelerator_0_0
@@ -30,12 +30,12 @@ Table of Contents
 +-------------------------+-------+-------+-----------+-------+
 |        Site Type        |  Used | Fixed | Available | Util% |
 +-------------------------+-------+-------+-----------+-------+
-| Slice LUTs*             |  7763 |     0 |     53200 | 14.59 |
-|   LUT as Logic          |  7763 |     0 |     53200 | 14.59 |
+| Slice LUTs*             |  7775 |     0 |     53200 | 14.61 |
+|   LUT as Logic          |  7775 |     0 |     53200 | 14.61 |
 |   LUT as Memory         |     0 |     0 |     17400 |  0.00 |
-| Slice Registers         | 12053 |     0 |    106400 | 11.33 |
-|   Register as Flip Flop | 12053 |     0 |    106400 | 11.33 |
-|   Register as Latch     |     0 |     0 |    106400 |  0.00 |
+| Slice Registers         | 12054 |     0 |    106400 | 11.33 |
+|   Register as Flip Flop | 12018 |     0 |    106400 | 11.30 |
+|   Register as Latch     |    36 |     0 |    106400 |  0.03 |
 | F7 Muxes                |   160 |     0 |     26600 |  0.60 |
 | F8 Muxes                |     0 |     0 |     13300 |  0.00 |
 +-------------------------+-------+-------+-----------+-------+
@@ -55,7 +55,7 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 8     |          Yes |           - |          Set |
-| 10936 |          Yes |           - |        Reset |
+| 10937 |          Yes |           - |        Reset |
 | 10    |          Yes |         Set |            - |
 | 1099  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -146,15 +146,16 @@ Table of Contents
 +----------+-------+---------------------+
 | Ref Name |  Used | Functional Category |
 +----------+-------+---------------------+
-| FDCE     | 10936 |        Flop & Latch |
-| LUT6     |  3830 |                 LUT |
-| LUT3     |  2328 |                 LUT |
-| LUT5     |  2110 |                 LUT |
+| FDCE     | 10901 |        Flop & Latch |
+| LUT5     |  3118 |                 LUT |
+| LUT6     |  2806 |                 LUT |
+| LUT3     |  2333 |                 LUT |
 | FDRE     |  1099 |        Flop & Latch |
 | CARRY4   |   260 |          CarryLogic |
 | MUXF7    |   160 |               MuxFx |
-| LUT2     |   125 |                 LUT |
-| LUT4     |    66 |                 LUT |
+| LUT2     |   133 |                 LUT |
+| LUT4     |    82 |                 LUT |
+| LDCE     |    36 |        Flop & Latch |
 | FDSE     |    10 |        Flop & Latch |
 | FDPE     |     8 |        Flop & Latch |
 | LUT1     |     5 |                 LUT |

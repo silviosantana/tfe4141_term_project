@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-// Date        : Fri Nov 23 22:55:44 2018
+// Date        : Sat Nov 24 18:53:41 2018
 // Host        : DESKTOP-BRJQR8B running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               C:/Users/silvi/workspace/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ip/rsa_soc_xbar_0/rsa_soc_xbar_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top rsa_soc_xbar_0 -prefix
+//               rsa_soc_xbar_0_ rsa_soc_xbar_0_stub.v
 // Design      : rsa_soc_xbar_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1

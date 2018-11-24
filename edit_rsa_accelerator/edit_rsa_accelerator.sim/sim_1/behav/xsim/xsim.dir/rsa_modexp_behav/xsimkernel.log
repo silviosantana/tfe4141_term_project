@@ -1,7 +1,0 @@
-Running: xsim.dir/rsa_modexp_behav/xsimk.exe -simmode gui -wdb rsa_modexp_behav.wdb -simrunnum 0 -socket 56017
-Design successfully loaded
-Design Loading Memory Usage: 5348 KB (Peak: 5348 KB)
-Design Loading CPU Usage: 124 ms
-Simulation completed
-Simulation Memory Usage: 6120 KB (Peak: 6120 KB)
-Simulation CPU Usage: 296 ms
