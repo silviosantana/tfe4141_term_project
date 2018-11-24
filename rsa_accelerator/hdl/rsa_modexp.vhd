@@ -68,8 +68,7 @@ entity rsa_modexp is
         key_e_d                 :  in std_logic_vector(C_BLOCK_SIZE-1 downto 0);
         key_n                   :  in std_logic_vector(C_BLOCK_SIZE-1 downto 0);
         r_mod_n                 :  in std_logic_vector(C_BLOCK_SIZE-1 downto 0);
-        r2_mod_n                :  in std_logic_vector(C_BLOCK_SIZE-1 downto 0);
-        rsa_status              : out std_logic_vector(31 downto 0)
+        r2_mod_n                :  in std_logic_vector(C_BLOCK_SIZE-1 downto 0)
     );
 end rsa_modexp;
 
@@ -116,9 +115,6 @@ architecture Behavioral of rsa_modexp is
     signal w_mon_pro_result: std_logic_vector(C_BLOCK_SIZE-1 downto 0);
     signal w_m1: std_logic_vector(C_BLOCK_SIZE-1 downto 0);
     signal w_m2: std_logic_vector(C_BLOCK_SIZE-1 downto 0);
-    
-    
-   
 
 begin 
     w_x_reg <= x_reg;

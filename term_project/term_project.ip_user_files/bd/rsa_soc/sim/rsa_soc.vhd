@@ -1,8 +1,8 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
---Date        : Mon Oct 22 00:31:01 2018
---Host        : Grimelid running 64-bit major release  (build 9200)
+--Date        : Fri Nov 23 20:56:27 2018
+--Host        : DESKTOP-BRJQR8B running 64-bit major release  (build 9200)
 --Command     : generate_target rsa_soc.bd
 --Design      : rsa_soc
 --Purpose     : IP block netlist
@@ -1557,6 +1557,78 @@ entity rsa_soc is
 end rsa_soc;
 
 architecture STRUCTURE of rsa_soc is
+  component rsa_soc_axi_smc_0 is
+  port (
+    aclk : in STD_LOGIC;
+    aresetn : in STD_LOGIC;
+    S00_AXI_araddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    S00_AXI_arlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    S00_AXI_arsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    S00_AXI_arburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    S00_AXI_arlock : in STD_LOGIC_VECTOR ( 0 to 0 );
+    S00_AXI_arcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    S00_AXI_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    S00_AXI_arqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    S00_AXI_arvalid : in STD_LOGIC;
+    S00_AXI_arready : out STD_LOGIC;
+    S00_AXI_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    S00_AXI_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    S00_AXI_rlast : out STD_LOGIC;
+    S00_AXI_rvalid : out STD_LOGIC;
+    S00_AXI_rready : in STD_LOGIC;
+    S01_AXI_awaddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    S01_AXI_awlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    S01_AXI_awsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    S01_AXI_awburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    S01_AXI_awlock : in STD_LOGIC_VECTOR ( 0 to 0 );
+    S01_AXI_awcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    S01_AXI_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    S01_AXI_awqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    S01_AXI_awvalid : in STD_LOGIC;
+    S01_AXI_awready : out STD_LOGIC;
+    S01_AXI_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    S01_AXI_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    S01_AXI_wlast : in STD_LOGIC;
+    S01_AXI_wvalid : in STD_LOGIC;
+    S01_AXI_wready : out STD_LOGIC;
+    S01_AXI_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    S01_AXI_bvalid : out STD_LOGIC;
+    S01_AXI_bready : in STD_LOGIC;
+    M00_AXI_awaddr : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    M00_AXI_awlen : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M00_AXI_awsize : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    M00_AXI_awburst : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    M00_AXI_awlock : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    M00_AXI_awcache : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M00_AXI_awprot : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    M00_AXI_awqos : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M00_AXI_awvalid : out STD_LOGIC;
+    M00_AXI_awready : in STD_LOGIC;
+    M00_AXI_wdata : out STD_LOGIC_VECTOR ( 63 downto 0 );
+    M00_AXI_wstrb : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    M00_AXI_wlast : out STD_LOGIC;
+    M00_AXI_wvalid : out STD_LOGIC;
+    M00_AXI_wready : in STD_LOGIC;
+    M00_AXI_bresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    M00_AXI_bvalid : in STD_LOGIC;
+    M00_AXI_bready : out STD_LOGIC;
+    M00_AXI_araddr : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    M00_AXI_arlen : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M00_AXI_arsize : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    M00_AXI_arburst : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    M00_AXI_arlock : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    M00_AXI_arcache : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M00_AXI_arprot : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    M00_AXI_arqos : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    M00_AXI_arvalid : out STD_LOGIC;
+    M00_AXI_arready : in STD_LOGIC;
+    M00_AXI_rdata : in STD_LOGIC_VECTOR ( 63 downto 0 );
+    M00_AXI_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    M00_AXI_rlast : in STD_LOGIC;
+    M00_AXI_rvalid : in STD_LOGIC;
+    M00_AXI_rready : out STD_LOGIC
+  );
+  end component rsa_soc_axi_smc_0;
   component rsa_soc_processing_system7_0_0 is
   port (
     USB0_PORT_INDCTL : out STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -1671,78 +1743,6 @@ architecture STRUCTURE of rsa_soc is
     PS_PORB : inout STD_LOGIC
   );
   end component rsa_soc_processing_system7_0_0;
-  component rsa_soc_axi_smc_0 is
-  port (
-    aclk : in STD_LOGIC;
-    aresetn : in STD_LOGIC;
-    S00_AXI_araddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    S00_AXI_arlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    S00_AXI_arsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    S00_AXI_arburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    S00_AXI_arlock : in STD_LOGIC_VECTOR ( 0 to 0 );
-    S00_AXI_arcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    S00_AXI_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    S00_AXI_arqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    S00_AXI_arvalid : in STD_LOGIC;
-    S00_AXI_arready : out STD_LOGIC;
-    S00_AXI_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    S00_AXI_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    S00_AXI_rlast : out STD_LOGIC;
-    S00_AXI_rvalid : out STD_LOGIC;
-    S00_AXI_rready : in STD_LOGIC;
-    S01_AXI_awaddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    S01_AXI_awlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    S01_AXI_awsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    S01_AXI_awburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    S01_AXI_awlock : in STD_LOGIC_VECTOR ( 0 to 0 );
-    S01_AXI_awcache : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    S01_AXI_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    S01_AXI_awqos : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    S01_AXI_awvalid : in STD_LOGIC;
-    S01_AXI_awready : out STD_LOGIC;
-    S01_AXI_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    S01_AXI_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    S01_AXI_wlast : in STD_LOGIC;
-    S01_AXI_wvalid : in STD_LOGIC;
-    S01_AXI_wready : out STD_LOGIC;
-    S01_AXI_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    S01_AXI_bvalid : out STD_LOGIC;
-    S01_AXI_bready : in STD_LOGIC;
-    M00_AXI_awaddr : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    M00_AXI_awlen : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    M00_AXI_awsize : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    M00_AXI_awburst : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    M00_AXI_awlock : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    M00_AXI_awcache : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    M00_AXI_awprot : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    M00_AXI_awqos : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    M00_AXI_awvalid : out STD_LOGIC;
-    M00_AXI_awready : in STD_LOGIC;
-    M00_AXI_wdata : out STD_LOGIC_VECTOR ( 63 downto 0 );
-    M00_AXI_wstrb : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    M00_AXI_wlast : out STD_LOGIC;
-    M00_AXI_wvalid : out STD_LOGIC;
-    M00_AXI_wready : in STD_LOGIC;
-    M00_AXI_bresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    M00_AXI_bvalid : in STD_LOGIC;
-    M00_AXI_bready : out STD_LOGIC;
-    M00_AXI_araddr : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    M00_AXI_arlen : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    M00_AXI_arsize : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    M00_AXI_arburst : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    M00_AXI_arlock : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    M00_AXI_arcache : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    M00_AXI_arprot : out STD_LOGIC_VECTOR ( 2 downto 0 );
-    M00_AXI_arqos : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    M00_AXI_arvalid : out STD_LOGIC;
-    M00_AXI_arready : in STD_LOGIC;
-    M00_AXI_rdata : in STD_LOGIC_VECTOR ( 63 downto 0 );
-    M00_AXI_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    M00_AXI_rlast : in STD_LOGIC;
-    M00_AXI_rvalid : in STD_LOGIC;
-    M00_AXI_rready : out STD_LOGIC
-  );
-  end component rsa_soc_axi_smc_0;
   component rsa_soc_rst_ps7_0_100M_0 is
   port (
     slowest_sync_clk : in STD_LOGIC;

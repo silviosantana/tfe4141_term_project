@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="rsa_soc_rsa_accelerator_0_0_synth_1" LaunchDir="C:/Users/silvi/workspace/tfe4141_term_project/term_project/term_project.runs/rsa_soc_rsa_accelerator_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

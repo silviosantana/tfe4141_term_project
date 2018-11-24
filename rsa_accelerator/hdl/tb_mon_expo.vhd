@@ -26,9 +26,8 @@ architecture bench of rsa_modexp_tb is
           key_e_d                 :  in std_logic_vector(C_BLOCK_SIZE-1 downto 0);
           key_n                   :  in std_logic_vector(C_BLOCK_SIZE-1 downto 0);
           r_mod_n                 :  in std_logic_vector(C_BLOCK_SIZE-1 downto 0);
-          r2_mod_n                :  in std_logic_vector(C_BLOCK_SIZE-1 downto 0);
-          rsa_status              : out std_logic_vector(31 downto 0)
-      );
+          r2_mod_n                :  in std_logic_vector(C_BLOCK_SIZE-1 downto 0)
+          );
   end component;
 
   signal clk: std_logic;
@@ -63,8 +62,7 @@ begin
                                 key_e_d      => key_e_d,
                                 key_n        => key_n,
                                 r_mod_n      => r_mod_n,
-                                r2_mod_n     => r2_mod_n,
-                                rsa_status   => rsa_status );
+                                r2_mod_n     => r2_mod_n );
 
   stimulus: process
   begin
