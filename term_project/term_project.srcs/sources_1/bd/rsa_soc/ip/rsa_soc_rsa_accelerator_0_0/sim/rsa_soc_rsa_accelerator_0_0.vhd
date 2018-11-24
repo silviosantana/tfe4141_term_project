@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:rsa_accelerator:1.0
--- IP Revision: 20
+-- IP Revision: 21
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;

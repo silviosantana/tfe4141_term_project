@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Nov 24 09:56:49 2018
+# Process ID: 16248
+# Current directory: C:/Users/silvi/workspace/tfe4141_term_project/edit_rsa_accelerator
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15612 C:\Users\silvi\workspace\tfe4141_term_project\edit_rsa_accelerator\edit_rsa_accelerator.xpr
+# Log file: C:/Users/silvi/workspace/tfe4141_term_project/edit_rsa_accelerator/vivado.log
+# Journal file: C:/Users/silvi/workspace/tfe4141_term_project/edit_rsa_accelerator\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/silvi/workspace/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.xpr
+update_compile_order -fileset sources_1
+ipx::open_ipxact_file C:/Users/silvi/workspace/tfe4141_term_project/rsa_accelerator/component.xml
+set_property core_revision 20 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/silvi/workspace/tfe4141_term_project/rsa_accelerator

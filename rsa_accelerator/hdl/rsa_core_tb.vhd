@@ -44,11 +44,12 @@ architecture Behavioral of rsa_core_tb is
     signal msgout_3        : std_logic_vector(C_BLOCK_SIZE-1 downto 0);
     signal msgout_4        : std_logic_vector(C_BLOCK_SIZE-1 downto 0);
     signal msgout_5        : std_logic_vector(C_BLOCK_SIZE-1 downto 0);
+    signal msgout_6        : std_logic_vector(C_BLOCK_SIZE-1 downto 0);
     
-    type state_write is (IDLE_WRITE, SEND_1, SEND_2, SEND_3, SEND_4, SEND_5);
+    type state_write is (IDLE_WRITE, SEND_1, SEND_2, SEND_3, SEND_4, SEND_5, SEND_6);
     signal curr_state_m1, next_state_m1: state_write;
     
-    type state_read is (IDLE_READ, READ_1, SAVE_1, READ_2, SAVE_2, READ_3, SAVE_3, READ_4, SAVE_4, READ_5, SAVE_5);
+    type state_read is (IDLE_READ, READ_1, SAVE_1, READ_2, SAVE_2, READ_3, SAVE_3, READ_4, SAVE_4, READ_5, SAVE_5, READ_6, SAVE_6);
     signal curr_state_m2, next_state_m2: state_read;
     
     constant clock_period: time := 10 ns;
@@ -198,12 +199,23 @@ end process clocking;
      when SEND_5 =>
         msgin_data  <=  std_logic_vector(to_unsigned(12254, 256));
         msgin_valid  <= '1';
+        msgin_last <= '0';
+                
+        if (msgin_ready = '1') then
+            next_state_m1 <= SEND_6;
+        else
+            next_state_m1 <= SEND_5;
+        end if;
+        
+     when SEND_6 =>
+        msgin_data  <=  std_logic_vector(to_unsigned(7, 256));
+        msgin_valid  <= '1';
         msgin_last <= '1';
                 
         if (msgin_ready = '1') then
             next_state_m1 <= IDLE_WRITE;
         else
-            next_state_m1 <= SEND_5;
+            next_state_m1 <= SEND_6;
         end if;
    
              
@@ -300,7 +312,22 @@ end process clocking;
          msgout_ready <= '1';
          msgout_5 <= msgout_data;
          
-         next_state_m2 <= IDLE_READ;            
+         next_state_m2 <= READ_6;  
+         
+     when READ_6 =>
+          msgout_ready <= '0';
+                  
+          if (msgout_valid = '1') then
+              next_state_m2 <= SAVE_6;
+          else
+              next_state_m2 <= READ_6;
+          end if;
+          
+      when SAVE_6 =>
+          msgout_ready <= '1';
+          msgout_6 <= msgout_data;
+          
+          next_state_m2 <= IDLE_READ;          
      
    
       when others => 

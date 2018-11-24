@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Sat Nov 24 10:11:01 2018
+| Date             : Sat Nov 24 12:32:18 2018
 | Host             : DESKTOP-BRJQR8B running 64-bit major release  (build 9200)
 | Command          : report_power -file rsa_soc_wrapper_power_routed.rpt -pb rsa_soc_wrapper_power_summary_routed.pb -rpx rsa_soc_wrapper_power_routed.rpx
 | Design           : rsa_soc_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.508        |
+| Total On-Chip Power (W)  | 1.502        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.371        |
+| Dynamic (W)              | 1.365        |
 | Device Static (W)        | 0.137        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 67.6         |
-| Junction Temperature (C) | 42.4         |
+| Max Ambient (C)          | 67.7         |
+| Junction Temperature (C) | 42.3         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,20 +52,20 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.031 |        3 |       --- |             --- |
-| Slice Logic              |     0.034 |    32410 |       --- |             --- |
-|   LUT as Logic           |     0.030 |    11137 |     53200 |           20.93 |
-|   Register               |     0.003 |    17586 |    106400 |           16.53 |
+| Clocks                   |     0.029 |        3 |       --- |             --- |
+| Slice Logic              |     0.032 |    32446 |       --- |             --- |
+|   LUT as Logic           |     0.027 |    11155 |     53200 |           20.97 |
+|   Register               |     0.003 |    17601 |    106400 |           16.54 |
 |   CARRY4                 |     0.001 |      350 |     13300 |            2.63 |
 |   LUT as Distributed RAM |    <0.001 |      410 |     17400 |            2.36 |
 |   LUT as Shift Register  |    <0.001 |      193 |     17400 |            1.11 |
 |   Others                 |     0.000 |      577 |       --- |             --- |
 |   F7/F8 Muxes            |     0.000 |      160 |     53200 |            0.30 |
-| Signals                  |     0.048 |    22715 |       --- |             --- |
+| Signals                  |     0.047 |    22781 |       --- |             --- |
 | Block RAM                |     0.001 |        2 |       140 |            1.43 |
 | PS7                      |     1.256 |        1 |       --- |             --- |
 | Static Power             |     0.137 |          |           |                 |
-| Total                    |     1.508 |          |           |                 |
+| Total                    |     1.502 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,8 +75,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.128 |       0.115 |      0.014 |
-| Vccaux    |       1.800 |     0.015 |       0.000 |      0.015 |
+| Vccint    |       1.000 |     0.122 |       0.109 |      0.014 |
+| Vccaux    |       1.800 |     0.014 |       0.000 |      0.014 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -151,8 +151,8 @@ Table of Contents
 +---------------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                              | Power (W) |
 +---------------------------------------------------------------------------------------------------+-----------+
-| rsa_soc_wrapper                                                                                   |     1.371 |
-|   rsa_soc_i                                                                                       |     1.371 |
+| rsa_soc_wrapper                                                                                   |     1.365 |
+|   rsa_soc_i                                                                                       |     1.365 |
 |     axi_smc                                                                                       |     0.013 |
 |       inst                                                                                        |     0.013 |
 |         clk_map                                                                                   |    <0.001 |
@@ -490,8 +490,8 @@ Table of Contents
 |                 gen_normal_area.inst_fifo_send                                                    |    <0.001 |
 |               inst_si_handler                                                                     |    <0.001 |
 |                 inst_arb_stall_late                                                               |    <0.001 |
-|           s01_b_node                                                                              |    <0.001 |
-|             inst                                                                                  |    <0.001 |
+|           s01_b_node                                                                              |     0.001 |
+|             inst                                                                                  |     0.001 |
 |               inst_mi_handler                                                                     |    <0.001 |
 |                 gen_normal_area.gen_node_prog_full.inst_node_prog_full                            |    <0.001 |
 |                   gen_xpm_memory_fifo.inst_fifo                                                   |    <0.001 |
@@ -599,18 +599,18 @@ Table of Contents
 |             reg_slice_r                                                                           |    <0.001 |
 |             splitter_ar                                                                           |    <0.001 |
 |             splitter_aw                                                                           |    <0.001 |
-|     rsa                                                                                           |     0.096 |
-|       rsa_acc                                                                                     |     0.090 |
-|         U0                                                                                        |     0.090 |
-|           u_rsa_core                                                                              |     0.087 |
-|             ModExp_0                                                                              |     0.023 |
-|               MonPro                                                                              |     0.015 |
-|                 MonPro_datapath                                                                   |     0.012 |
+|     rsa                                                                                           |     0.090 |
+|       rsa_acc                                                                                     |     0.084 |
+|         U0                                                                                        |     0.084 |
+|           u_rsa_core                                                                              |     0.081 |
+|             ModExp_0                                                                              |     0.020 |
+|               MonPro                                                                              |     0.014 |
+|                 MonPro_datapath                                                                   |     0.011 |
 |                   A_sreg                                                                          |     0.001 |
-|                   B_reg                                                                           |     0.003 |
+|                   B_reg                                                                           |     0.002 |
 |                   P_reg                                                                           |     0.001 |
 |                   U_sreg                                                                          |     0.002 |
-|                   n_reg                                                                           |    <0.001 |
+|                   n_reg                                                                           |     0.001 |
 |                 Mon_Pro_controlpath                                                               |     0.002 |
 |             ModExp_1                                                                              |     0.019 |
 |               MonPro                                                                              |     0.013 |
@@ -619,20 +619,20 @@ Table of Contents
 |                   B_reg                                                                           |     0.002 |
 |                   P_reg                                                                           |     0.001 |
 |                   U_sreg                                                                          |     0.002 |
-|                   n_reg                                                                           |    <0.001 |
+|                   n_reg                                                                           |     0.001 |
 |                 Mon_Pro_controlpath                                                               |     0.002 |
-|             ModExp_2                                                                              |     0.020 |
-|               MonPro                                                                              |     0.013 |
-|                 MonPro_datapath                                                                   |     0.010 |
+|             ModExp_2                                                                              |     0.019 |
+|               MonPro                                                                              |     0.012 |
+|                 MonPro_datapath                                                                   |     0.009 |
 |                   A_sreg                                                                          |     0.001 |
-|                   B_reg                                                                           |     0.003 |
+|                   B_reg                                                                           |     0.002 |
 |                   P_reg                                                                           |     0.001 |
 |                   U_sreg                                                                          |     0.002 |
 |                   n_reg                                                                           |    <0.001 |
 |                 Mon_Pro_controlpath                                                               |     0.002 |
-|             ModExp_3                                                                              |     0.024 |
-|               MonPro                                                                              |     0.013 |
-|                 MonPro_datapath                                                                   |     0.010 |
+|             ModExp_3                                                                              |     0.022 |
+|               MonPro                                                                              |     0.012 |
+|                 MonPro_datapath                                                                   |     0.009 |
 |                   A_sreg                                                                          |     0.001 |
 |                   B_reg                                                                           |     0.002 |
 |                   P_reg                                                                           |     0.001 |
@@ -726,7 +726,7 @@ Table of Contents
 |                         xpm_fifo_rst_inst                                                         |    <0.001 |
 |               GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC                                               |    <0.001 |
 |               GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER                                              |     0.001 |
-|                 GEN_INCLUDE_SCATTER.I_S2MM_SCATTER                                                |     0.001 |
+|                 GEN_INCLUDE_SCATTER.I_S2MM_SCATTER                                                |    <0.001 |
 |                   I_MSSAI_SKID_BUF                                                                |    <0.001 |
 |                   I_TSTRB_FIFO                                                                    |    <0.001 |
 |                     USE_SRL_FIFO.I_SYNC_FIFO                                                      |    <0.001 |

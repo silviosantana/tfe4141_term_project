@@ -1,69 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1542998961">
-  <File Type="BITSTR-BMM" Name="rsa_accelerator_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="rsa_accelerator_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="rsa_accelerator_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR" Name="rsa_accelerator_power_routed.rpt"/>
   <File Type="PA-TCL" Name="rsa_accelerator.tcl"/>
-  <File Type="OPT-TIMING" Name="rsa_accelerator_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="rsa_accelerator_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="rsa_accelerator_power_summary_routed.pb"/>
+  <File Type="BITSTR-BMM" Name="rsa_accelerator_bd.bmm"/>
   <File Type="REPORTS-TCL" Name="rsa_accelerator_reports.tcl"/>
+  <File Type="OPT-DCP" Name="rsa_accelerator_opt.dcp"/>
   <File Type="OPT-DRC" Name="rsa_accelerator_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="rsa_accelerator.hwdef"/>
   <File Type="PWROPT-DCP" Name="rsa_accelerator_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="rsa_accelerator_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="rsa_accelerator_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="rsa_accelerator_placed.dcp"/>
-  <File Type="PLACE-IO" Name="rsa_accelerator_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="rsa_accelerator_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="rsa_accelerator_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="rsa_accelerator_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="rsa_accelerator_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="rsa_accelerator_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="rsa_accelerator_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BGN" Name="rsa_accelerator.bgn"/>
-  <File Type="PLACE-TIMING" Name="rsa_accelerator_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="rsa_accelerator_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="rsa_accelerator.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="rsa_accelerator_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="rsa_accelerator_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="rsa_accelerator_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="rsa_accelerator.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="rsa_accelerator_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="rsa_accelerator_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="rsa_accelerator_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="rsa_accelerator_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="rsa_accelerator_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="rsa_accelerator_drc_routed.pb"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="rsa_accelerator.ltx"/>
-  <File Type="ROUTE-DRC-RPX" Name="rsa_accelerator_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="rsa_accelerator.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="rsa_accelerator_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="rsa_accelerator_methodology_drc_routed.rpx"/>
   <File Type="BITSTR-SYSDEF" Name="rsa_accelerator.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="rsa_accelerator_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="rsa_accelerator_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="rsa_accelerator_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="rsa_accelerator_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="rsa_accelerator_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="rsa_accelerator_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="rsa_accelerator_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="rsa_accelerator_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="rsa_accelerator_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="rsa_accelerator_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="rsa_accelerator_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="rsa_accelerator_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="rsa_accelerator_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="rsa_accelerator_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="rsa_accelerator_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="rsa_accelerator_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="rsa_accelerator_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="rsa_accelerator_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="rsa_accelerator_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="rsa_accelerator.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="rsa_accelerator_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="rsa_accelerator.rbt"/>
   <File Type="BITSTR-NKY" Name="rsa_accelerator.nky"/>
   <File Type="BG-DRC" Name="rsa_accelerator.drc"/>

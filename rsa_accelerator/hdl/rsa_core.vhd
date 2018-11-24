@@ -77,10 +77,12 @@ architecture rtl of rsa_core is
           reset_n                :  in std_logic;
           msgin_valid            : in std_logic;
           msgin_data             :  in std_logic_vector(C_BLOCK_SIZE-1 downto 0);
+          msgin_last             : in std_logic;
           is_idle                : out std_logic;
           msgout_ready           : in std_logic;
           msgout_valid            : out std_logic;
           msgout_data             : out std_logic_vector(C_BLOCK_SIZE-1 downto 0);
+          msgout_last             : out std_logic;
           key_e_d                 :  in std_logic_vector(C_BLOCK_SIZE-1 downto 0);
           key_n                   :  in std_logic_vector(C_BLOCK_SIZE-1 downto 0);
           r_mod_n                 :  in std_logic_vector(C_BLOCK_SIZE-1 downto 0);
@@ -240,10 +242,12 @@ ModExp_0: rsa_modexp port map(
         reset_n           => reset_n,
         msgin_valid       => monexp_msgin_valid_0,  
         msgin_data        => msgin_data,
+        msgin_last        => monexp_msgin_last_0,
         is_idle           => monexp_idle_0,
         msgout_ready      => monexp_msgout_ready_0,
         msgout_valid      => monexp_msgout_valid_0,
         msgout_data       => monexp_msgout_0,
+        msgout_last        => monexp_msgout_last_0,
         key_e_d           => key_e_d,
         key_n             => key_n,
         r_mod_n           => r_mod_n,
@@ -255,10 +259,12 @@ ModExp_1: rsa_modexp port map(
         reset_n           => reset_n,
         msgin_valid       => monexp_msgin_valid_1,  
         msgin_data        => msgin_data,
+        msgin_last        => monexp_msgin_last_1,
         is_idle           => monexp_idle_1,
         msgout_ready      => monexp_msgout_ready_1,
         msgout_valid      => monexp_msgout_valid_1,
         msgout_data       => monexp_msgout_1,
+        msgout_last        => monexp_msgout_last_1,
         key_e_d           => key_e_d,
         key_n             => key_n,
         r_mod_n           => r_mod_n,
@@ -272,10 +278,12 @@ ModExp_2: rsa_modexp port map(
         reset_n           => reset_n,
         msgin_valid       => monexp_msgin_valid_2,  
         msgin_data        => msgin_data,
+        msgin_last        => monexp_msgin_last_2,
         is_idle           => monexp_idle_2,
         msgout_ready      => monexp_msgout_ready_2,
         msgout_valid      => monexp_msgout_valid_2,
         msgout_data       => monexp_msgout_2,
+        msgout_last        => monexp_msgout_last_2,
         key_e_d           => key_e_d,
         key_n             => key_n,
         r_mod_n           => r_mod_n,
@@ -287,10 +295,12 @@ ModExp_3: rsa_modexp port map(
         reset_n           => reset_n,
         msgin_valid       => monexp_msgin_valid_3,  
         msgin_data        => msgin_data,
+        msgin_last        => monexp_msgin_last_3,
         is_idle           => monexp_idle_3,
         msgout_ready      => monexp_msgout_ready_3,
         msgout_valid      => monexp_msgout_valid_3,
         msgout_data       => monexp_msgout_3,
+        msgout_last        => monexp_msgout_last_3,
         key_e_d           => key_e_d,
         key_n             => key_n,
         r_mod_n           => r_mod_n,

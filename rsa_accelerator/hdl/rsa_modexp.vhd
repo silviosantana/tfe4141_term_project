@@ -52,6 +52,8 @@ entity rsa_modexp is
         msgin_valid            : in std_logic;   
         -- Message that will be sent out of the rsa_msgin module
         msgin_data             :  in std_logic_vector(C_BLOCK_SIZE-1 downto 0);
+        -- Indicates boundary of last packet
+        msgin_last             :  in std_logic;
         is_idle                :  out std_logic;
         -----------------------------------------------------------------------------
         -- Master msgout interface
@@ -61,6 +63,8 @@ entity rsa_modexp is
         msgout_valid            : out std_logic;   
         -- Message that will be sent out of the rsa_msgin module
         msgout_data             : out std_logic_vector(C_BLOCK_SIZE-1 downto 0);
+        -- Indicates boundary of last packet
+        msgout_last             : out std_logic;
         
         -----------------------------------------------------------------------------
         -- Interface to the register block
@@ -85,7 +89,7 @@ architecture Behavioral of rsa_modexp is
     -----------------------------------------------------------------------------
     -- Internal signals
     -----------------------------------------------------------------------------
-    signal EN_x, EN_m, EN_r, EN_in_m: std_logic;
+    signal EN_x, EN_m, EN_r, EN_in_m, EN_msg_last: std_logic;
     signal S0, S1: std_logic;
     signal S2: std_logic_vector(1 downto 0);
     
@@ -103,6 +107,7 @@ architecture Behavioral of rsa_modexp is
     signal x_reg: std_logic_vector(C_BLOCK_SIZE-1 downto 0);
     signal m_reg: std_logic_vector(C_BLOCK_SIZE-1 downto 0);
     signal m_in_reg: std_logic_vector(C_BLOCK_SIZE-1 downto 0);
+    signal msg_last_reg: std_logic;
     signal r_reg: std_logic_vector(C_BLOCK_SIZE-1 downto 0);
     
     -----------------------------------------------------------------------------
@@ -122,6 +127,8 @@ begin
     w_m_in_reg <= m_in_reg;
     
     msgout_data <= r_reg;
+    
+    --msgout_last <= msgin_last;
     
     Counter_proc: process (clk, reset_n)
     begin
@@ -178,6 +185,17 @@ begin
             end if; 
         end if;
     end process M_IN_REG_PROC;
+    
+    MSG_LAST_REG_PROC: process (clk, reset_n)
+    begin
+        if (reset_n = '0') then
+            msg_last_reg <= '0';
+        elsif rising_edge(clk) then
+            if(EN_msg_last = '1') then
+                msg_last_reg <= msgin_last;
+            end if; 
+        end if;
+    end process MSG_LAST_REG_PROC;
     
     M_REG_PROC: process (clk, reset_n)
     begin
@@ -256,6 +274,7 @@ begin
         EN_x <= '0';
         EN_m <= '0';
         EN_in_m <= '0';
+        EN_msg_last <= '0';
         EN_r <= '0';
         EN_prod <= '0';
         RST_prod <= '1';
@@ -265,6 +284,7 @@ begin
         E_load <= '0';
         E_shift <= '0';
         is_idle <= '0';
+        msgout_last <= '0';
       
         case (curr_state) is
         when IDLE =>
@@ -274,6 +294,7 @@ begin
             EN_x <= '0';
             EN_m <= '0';
             EN_in_m <= '1';
+            EN_msg_last <= '1';
             EN_r <= '0';
             EN_prod <= '0';
             RST_prod <= '0';
@@ -283,6 +304,7 @@ begin
             E_load <= '0';
             E_shift <= '0';
             is_idle <= '1';
+            msgout_last <= '0';
             
             if (msgin_valid = '1') then
                 next_state <= ONE;
@@ -296,6 +318,7 @@ begin
             S2 <= "01";
             EN_x <= '1';
             EN_in_m <= '0';
+            EN_msg_last <= '0';
             RST_prod <= '1';
             EN_prod <= '1';
             load_counter <= '1'; 
@@ -418,6 +441,7 @@ begin
             EN_r <= '0';
             RST_prod <= '0';
             msgout_valid <= '1';
+            msgout_last <= msg_last_reg;
             
             if (msgout_ready = '1') then
                 next_state <= IDLE;
