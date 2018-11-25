@@ -3,9 +3,11 @@
 Jun 14 2018
 20:41:02
 C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.srcs/sim_1/new/core_tbfkin2.vhd,1543093272,vhdl,,,,core_tbfkin2,,,,,,,,
-C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/MonPro.vhd,1543098893,vhdl,C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/rsa_modexp.vhd,,,monpro,,,,,,,,
-C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/Mon_Pro_control.vhd,1543101231,vhdl,C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/MonPro.vhd,,,monpro_control_path,,,,,,,,
-C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/Montgomery_product.vhd,1543101120,vhdl,C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/MonPro.vhd,,,montgomery_product;reg,,,,,,,,
-C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/rsa_core.vhd,1543100347,vhdl,C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.srcs/sim_1/new/core_tbfkin2.vhd,,,rsa_core,,,,,,,,
-C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/rsa_core_tb.vhd,1543058124,vhdl,,,,rsa_core_tb,,,,,,,,
-C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/rsa_modexp.vhd,1543099403,vhdl,,,,rsa_modexp,,,,,,,,
+C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/MonPro.vhd,1543103519,vhdl,C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/rsa_modexp.vhd,,,monpro,,,,,,,,
+C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/Mon_Pro_control.vhd,1543131163,vhdl,C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/MonPro.vhd,,,monpro_control_path,,,,,,,,
+C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/Montgomery_product.vhd,1543101120,vhdl,C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/MonPro.vhd,,,montgomery_product,,,,,,,,
+C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/rsa_core.vhd,1543130755,vhdl,C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/rsa_core_tb.vhd,,,rsa_core,,,,,,,,
+C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/rsa_core_tb.vhd,1543137646,vhdl,,,,rsa_core_tb,,,,,,,,
+C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/rsa_modexp.vhd,1543130857,vhdl,,,,rsa_modexp,,,,,,,,
+C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/tb_mon_expo.vhd,1543138240,vhdl,,,,rsa_modexp_tb,,,,,,,,
+C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd,1543135832,vhdl,,,,rsa_core_testbench,,,,,,,,

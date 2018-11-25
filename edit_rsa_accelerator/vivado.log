@@ -560,3 +560,863 @@ update_ip_catalog -rebuild -repo_path c:/Users/silvi/Desktop/tfe4141_term_projec
 INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator'
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'rsa_core_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj rsa_core_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/Mon_Pro_control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MonPro_control_path
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/MonPro.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MonPro
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/rsa_core.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rsa_core
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/rsa_modexp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rsa_modexp
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 91b9267eb12847098834f19c071e9069 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot rsa_core_tb_behav xil_defaultlib.rsa_core_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture behavioral of entity xil_defaultlib.reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg [\reg(reg_width=257)\]
+Compiling architecture behavioral of entity xil_defaultlib.Montgomery_product [montgomery_product_default]
+Compiling architecture behavioral of entity xil_defaultlib.MonPro_control_path [monpro_control_path_default]
+Compiling architecture rtl of entity xil_defaultlib.MonPro [monpro_default]
+Compiling architecture behavioral of entity xil_defaultlib.rsa_modexp [rsa_modexp_default]
+Compiling architecture rtl of entity xil_defaultlib.rsa_core [rsa_core_default]
+Compiling architecture behavioral of entity xil_defaultlib.rsa_core_tb
+Built simulation snapshot rsa_core_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 906.992 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "rsa_core_tb_behav -key {Behavioral:sim_1:Functional:rsa_core_tb} -tclbatch {rsa_core_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source rsa_core_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'rsa_core_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 906.992 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 3 ms
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 909.258 ; gain = 2.266
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top core_tbfkin2 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'core_tbfkin2' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj core_tbfkin2_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/MonPro.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MonPro
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/rsa_modexp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rsa_modexp
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 91b9267eb12847098834f19c071e9069 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot core_tbfkin2_behav xil_defaultlib.core_tbfkin2 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture behavioral of entity xil_defaultlib.reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg [\reg(reg_width=257)\]
+Compiling architecture behavioral of entity xil_defaultlib.Montgomery_product [montgomery_product_default]
+Compiling architecture behavioral of entity xil_defaultlib.MonPro_control_path [monpro_control_path_default]
+Compiling architecture rtl of entity xil_defaultlib.MonPro [monpro_default]
+Compiling architecture behavioral of entity xil_defaultlib.rsa_modexp [rsa_modexp_default]
+Compiling architecture rtl of entity xil_defaultlib.rsa_core [rsa_core_default]
+Compiling architecture behavioral of entity xil_defaultlib.core_tbfkin2
+Built simulation snapshot core_tbfkin2_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "core_tbfkin2_behav -key {Behavioral:sim_1:Functional:core_tbfkin2} -tclbatch {core_tbfkin2.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source core_tbfkin2.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'core_tbfkin2_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 909.355 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 3 ms
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 909.355 ; gain = 0.000
+run 3 ms
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 909.355 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top rsa_core_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+ipx::merge_project_changes files [ipx::current_core]
+CRITICAL WARNING: [IP_Flow 19-5098] File 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/rsa_msgin.vhd' is of type VHDL-2008, which is not supported by the IP Packager
+CRITICAL WARNING: [IP_Flow 19-5098] File 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/rsa_msgout.vhd' is of type VHDL-2008, which is not supported by the IP Packager
+CRITICAL WARNING: [IP_Flow 19-5098] File 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/rsa_accelerator.vhd' is of type VHDL-2008, which is not supported by the IP Packager
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/dummy_monpro.vhd'.
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+CRITICAL WARNING: [IP_Flow 19-5098] File 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/rsa_msgin.vhd' is of type VHDL-2008, which is not supported by the IP Packager
+CRITICAL WARNING: [IP_Flow 19-5098] File 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/rsa_msgout.vhd' is of type VHDL-2008, which is not supported by the IP Packager
+CRITICAL WARNING: [IP_Flow 19-5098] File 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/rsa_accelerator.vhd' is of type VHDL-2008, which is not supported by the IP Packager
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/dummy_monpro.vhd'.
+INFO: [IP_Flow 7-560]  
+INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'.
+set_property core_revision 19 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator'
+set_property top core_tbfkin2 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'core_tbfkin2' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj core_tbfkin2_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/rsa_modexp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rsa_modexp
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 91b9267eb12847098834f19c071e9069 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot core_tbfkin2_behav xil_defaultlib.core_tbfkin2 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture behavioral of entity xil_defaultlib.reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg [\reg(reg_width=257)\]
+Compiling architecture behavioral of entity xil_defaultlib.Montgomery_product [montgomery_product_default]
+Compiling architecture behavioral of entity xil_defaultlib.MonPro_control_path [monpro_control_path_default]
+Compiling architecture rtl of entity xil_defaultlib.MonPro [monpro_default]
+Compiling architecture behavioral of entity xil_defaultlib.rsa_modexp [rsa_modexp_default]
+Compiling architecture rtl of entity xil_defaultlib.rsa_core [rsa_core_default]
+Compiling architecture behavioral of entity xil_defaultlib.core_tbfkin2
+Built simulation snapshot core_tbfkin2_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 909.355 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "core_tbfkin2_behav -key {Behavioral:sim_1:Functional:core_tbfkin2} -tclbatch {core_tbfkin2.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source core_tbfkin2.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'core_tbfkin2_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 909.355 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 3 ms
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 909.355 ; gain = 0.000
+run 3 ms
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 909.355 ; gain = 0.000
+run 3 ms
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 909.355 ; gain = 0.000
+run 3 ms
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 909.355 ; gain = 0.000
+run 3 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+update_compile_order -fileset sim_1
+set_property top rsa_core_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'rsa_core_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj rsa_core_testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rsa_core_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 91b9267eb12847098834f19c071e9069 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot rsa_core_testbench_behav xil_defaultlib.rsa_core_testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.math_real
+Compiling package ieee.numeric_std
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture behavioral of entity xil_defaultlib.reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg [\reg(reg_width=257)\]
+Compiling architecture behavioral of entity xil_defaultlib.Montgomery_product [montgomery_product_default]
+Compiling architecture behavioral of entity xil_defaultlib.MonPro_control_path [monpro_control_path_default]
+Compiling architecture rtl of entity xil_defaultlib.MonPro [monpro_default]
+Compiling architecture behavioral of entity xil_defaultlib.rsa_modexp [rsa_modexp_default]
+Compiling architecture rtl of entity xil_defaultlib.rsa_core [rsa_core_default]
+Compiling architecture struct of entity xil_defaultlib.rsa_core_testbench
+Built simulation snapshot rsa_core_testbench_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim/xsim.dir/rsa_core_testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim/xsim.dir/rsa_core_testbench_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Nov 25 09:34:43 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov 25 09:34:43 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 909.355 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "rsa_core_testbench_behav -key {Behavioral:sim_1:Functional:rsa_core_testbench} -tclbatch {rsa_core_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source rsa_core_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: Simulation object /rsa_core_testbench/tc_inp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /rsa_core_testbench/tc_otp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+# run 1000ns
+Note: ********************************************************************************
+Time: 20 ns  Iteration: 1  Process: /rsa_core_testbench/testcase_control  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: STARTING NEW TESTCASE
+Time: 20 ns  Iteration: 1  Process: /rsa_core_testbench/testcase_control  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: ********************************************************************************
+Time: 20 ns  Iteration: 1  Process: /rsa_core_testbench/testcase_control  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: DRIVE NEW MSGIN_DATA[0000] RTL: 0A23232323232323232323232323232323232323232323232323232323232323
+Time: 60 ns  Iteration: 1  Process: /rsa_core_testbench/msgin_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: DRIVE NEW MSGIN_DATA[0001] RTL: 0A232020207478742E6E695F307470203A2020202020202020202020454D414E
+Time: 120 ns  Iteration: 1  Process: /rsa_core_testbench/msgin_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: DRIVE NEW MSGIN_DATA[0002] RTL: 0A2320202020202020202020203336203A2020544E554F43204547415353454D
+Time: 180 ns  Iteration: 1  Process: /rsa_core_testbench/msgin_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: DRIVE NEW MSGIN_DATA[0003] RTL: 0A2320202020202020202041307830203A464C20726F662065646F6320786548
+Time: 300 ns  Iteration: 1  Process: /rsa_core_testbench/msgin_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'rsa_core_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 909.355 ; gain = 0.000
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 100 us
+run 1 ms
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1 ms
+Note: ********************************************************************************
+Time: 20 ns  Iteration: 1  Process: /rsa_core_testbench/testcase_control  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: STARTING NEW TESTCASE
+Time: 20 ns  Iteration: 1  Process: /rsa_core_testbench/testcase_control  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: ********************************************************************************
+Time: 20 ns  Iteration: 1  Process: /rsa_core_testbench/testcase_control  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: DRIVE NEW MSGIN_DATA[0000] RTL: 0A23232323232323232323232323232323232323232323232323232323232323
+Time: 60 ns  Iteration: 1  Process: /rsa_core_testbench/msgin_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: DRIVE NEW MSGIN_DATA[0001] RTL: 0A232020207478742E6E695F307470203A2020202020202020202020454D414E
+Time: 120 ns  Iteration: 1  Process: /rsa_core_testbench/msgin_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: DRIVE NEW MSGIN_DATA[0002] RTL: 0A2320202020202020202020203336203A2020544E554F43204547415353454D
+Time: 180 ns  Iteration: 1  Process: /rsa_core_testbench/msgin_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: DRIVE NEW MSGIN_DATA[0003] RTL: 0A2320202020202020202041307830203A464C20726F662065646F6320786548
+Time: 300 ns  Iteration: 1  Process: /rsa_core_testbench/msgin_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+run 10 ms
+Note: COMPARE MSGOUT_DATA[0000] RTL: 34F5BCE6CAB2D2BFFE150D4B86113C90E50081A16AB17455AED5E77A8D426E4B   EXPECTED: 85EE722363960779206A2B37CC8B64B5FC12A934473FA0204BBAAF714BC90C01
+Time: 2688540 ns  Iteration: 1  Process: /rsa_core_testbench/msgout_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Failure: Output message differs from the expected result
+Time: 2688540 ns  Iteration: 1  Process: /rsa_core_testbench/msgout_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+$finish called at time : 2688540 ns : File "C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd" Line 571
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 909.355 ; gain = 0.000
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'rsa_core_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj rsa_core_testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rsa_core_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 91b9267eb12847098834f19c071e9069 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot rsa_core_testbench_behav xil_defaultlib.rsa_core_testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.math_real
+Compiling package ieee.numeric_std
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture behavioral of entity xil_defaultlib.reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg [\reg(reg_width=257)\]
+Compiling architecture behavioral of entity xil_defaultlib.Montgomery_product [montgomery_product_default]
+Compiling architecture behavioral of entity xil_defaultlib.MonPro_control_path [monpro_control_path_default]
+Compiling architecture rtl of entity xil_defaultlib.MonPro [monpro_default]
+Compiling architecture behavioral of entity xil_defaultlib.rsa_modexp [rsa_modexp_default]
+Compiling architecture rtl of entity xil_defaultlib.rsa_core [rsa_core_default]
+Compiling architecture struct of entity xil_defaultlib.rsa_core_testbench
+Built simulation snapshot rsa_core_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+Note: ********************************************************************************
+Time: 20 ns  Iteration: 1  Process: /rsa_core_testbench/testcase_control  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: STARTING NEW TESTCASE
+Time: 20 ns  Iteration: 1  Process: /rsa_core_testbench/testcase_control  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: ********************************************************************************
+Time: 20 ns  Iteration: 1  Process: /rsa_core_testbench/testcase_control  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: DRIVE NEW MSGIN_DATA[0000] RTL: 0A23232323232323232323232323232323232323232323232323232323232323
+Time: 60 ns  Iteration: 1  Process: /rsa_core_testbench/msgin_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: DRIVE NEW MSGIN_DATA[0001] RTL: 0A232020207478742E6E695F307470203A2020202020202020202020454D414E
+Time: 120 ns  Iteration: 1  Process: /rsa_core_testbench/msgin_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: DRIVE NEW MSGIN_DATA[0002] RTL: 0A2320202020202020202020203336203A2020544E554F43204547415353454D
+Time: 180 ns  Iteration: 1  Process: /rsa_core_testbench/msgin_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: DRIVE NEW MSGIN_DATA[0003] RTL: 0A2320202020202020202041307830203A464C20726F662065646F6320786548
+Time: 300 ns  Iteration: 1  Process: /rsa_core_testbench/msgin_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 909.355 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 2 ms
+Note: ********************************************************************************
+Time: 20 ns  Iteration: 1  Process: /rsa_core_testbench/testcase_control  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: STARTING NEW TESTCASE
+Time: 20 ns  Iteration: 1  Process: /rsa_core_testbench/testcase_control  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: ********************************************************************************
+Time: 20 ns  Iteration: 1  Process: /rsa_core_testbench/testcase_control  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: DRIVE NEW MSGIN_DATA[0000] RTL: 0A23232323232323232323232323232323232323232323232323232323232323
+Time: 60 ns  Iteration: 1  Process: /rsa_core_testbench/msgin_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: DRIVE NEW MSGIN_DATA[0001] RTL: 0A232020207478742E6E695F307470203A2020202020202020202020454D414E
+Time: 120 ns  Iteration: 1  Process: /rsa_core_testbench/msgin_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: DRIVE NEW MSGIN_DATA[0002] RTL: 0A2320202020202020202020203336203A2020544E554F43204547415353454D
+Time: 180 ns  Iteration: 1  Process: /rsa_core_testbench/msgin_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: DRIVE NEW MSGIN_DATA[0003] RTL: 0A2320202020202020202041307830203A464C20726F662065646F6320786548
+Time: 300 ns  Iteration: 1  Process: /rsa_core_testbench/msgin_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 909.355 ; gain = 0.000
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 10 us
+Note: COMPARE MSGOUT_DATA[0000] RTL: 8F88992D0B75F978497C4B54F655BF42990BD6103ED6DE474F7F963FDDA78931   EXPECTED: 85EE722363960779206A2B37CC8B64B5FC12A934473FA0204BBAAF714BC90C01
+Time: 2688540 ns  Iteration: 1  Process: /rsa_core_testbench/msgout_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Failure: Output message differs from the expected result
+Time: 2688540 ns  Iteration: 1  Process: /rsa_core_testbench/msgout_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+$finish called at time : 2688540 ns : File "C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd" Line 571
+run 10 us
+Note: COMPARE MSGOUT_DATA[0001] RTL: 4E9D8EAB770C135235272EF8C6F8F3467A6ABB389E1FFCDC18199A352525D8D3   EXPECTED: 08F9BAF32E8505CBC9A28FED4D5791DCE46508C3D1636232BF91F5D0B6632A9F
+Time: 2688620 ns  Iteration: 1  Process: /rsa_core_testbench/msgout_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Failure: Output message differs from the expected result
+Time: 2688620 ns  Iteration: 1  Process: /rsa_core_testbench/msgout_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+$finish called at time : 2688620 ns : File "C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd" Line 571
+run 10 us
+Note: COMPARE MSGOUT_DATA[0002] RTL: 27BCC9555448689C780C6C28DB87DFA03D42382AE09228CC263488835130951C   EXPECTED: 81CA80617856C964E2F92DDE82841CC7CE81210F56BF18A32D2EE2ADA64586D6
+Time: 2688680 ns  Iteration: 1  Process: /rsa_core_testbench/msgout_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Failure: Output message differs from the expected result
+Time: 2688680 ns  Iteration: 1  Process: /rsa_core_testbench/msgout_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+$finish called at time : 2688680 ns : File "C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd" Line 571
+run 10 us
+Note: COMPARE MSGOUT_DATA[0003] RTL: 8080EED16D1144475612A16FF95EFFE772BEED044F07D3C825C35B95CCC0FAA6   EXPECTED: 805974EFD1C6E0D32AD06D3F86168D991B6DE12371BE881E903C562C2EBEDE8E
+Time: 2688800 ns  Iteration: 1  Process: /rsa_core_testbench/msgout_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Failure: Output message differs from the expected result
+Time: 2688800 ns  Iteration: 1  Process: /rsa_core_testbench/msgout_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+$finish called at time : 2688800 ns : File "C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd" Line 571
+run 10 us
+Note: ********************************************************************************
+Time: 2688880 ns  Iteration: 1  Process: /rsa_core_testbench/testcase_control  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: STARTING NEW TESTCASE
+Time: 2688880 ns  Iteration: 1  Process: /rsa_core_testbench/testcase_control  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: ********************************************************************************
+Time: 2688880 ns  Iteration: 1  Process: /rsa_core_testbench/testcase_control  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: DRIVE NEW MSGIN_DATA[0004] RTL: 2323232323232323232323232323232323232323232323232323232323232323
+Time: 2688960 ns  Iteration: 1  Process: /rsa_core_testbench/msgin_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: DRIVE NEW MSGIN_DATA[0005] RTL: 0A23232323232323232323232323232323232323232323232323232323232323
+Time: 2689040 ns  Iteration: 1  Process: /rsa_core_testbench/msgin_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: DRIVE NEW MSGIN_DATA[0006] RTL: 20202020207478742E6E695F317470203A2020202020202020202020454D414E
+Time: 2689160 ns  Iteration: 1  Process: /rsa_core_testbench/msgin_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+Note: DRIVE NEW MSGIN_DATA[0007] RTL: 0A23202020202020202020202020202020202020202020202020202020202020
+Time: 2689220 ns  Iteration: 1  Process: /rsa_core_testbench/msgin_bfm  File: C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top rsa_core_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'rsa_core_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj rsa_core_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 91b9267eb12847098834f19c071e9069 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot rsa_core_tb_behav xil_defaultlib.rsa_core_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture behavioral of entity xil_defaultlib.reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg [\reg(reg_width=257)\]
+Compiling architecture behavioral of entity xil_defaultlib.Montgomery_product [montgomery_product_default]
+Compiling architecture behavioral of entity xil_defaultlib.MonPro_control_path [monpro_control_path_default]
+Compiling architecture rtl of entity xil_defaultlib.MonPro [monpro_default]
+Compiling architecture behavioral of entity xil_defaultlib.rsa_modexp [rsa_modexp_default]
+Compiling architecture rtl of entity xil_defaultlib.rsa_core [rsa_core_default]
+Compiling architecture behavioral of entity xil_defaultlib.rsa_core_tb
+Built simulation snapshot rsa_core_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "rsa_core_tb_behav -key {Behavioral:sim_1:Functional:rsa_core_tb} -tclbatch {rsa_core_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source rsa_core_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'rsa_core_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 913.551 ; gain = 4.195
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 3 ms
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 933.691 ; gain = 20.141
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'rsa_core_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj rsa_core_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/rsa_core_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rsa_core_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 91b9267eb12847098834f19c071e9069 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot rsa_core_tb_behav xil_defaultlib.rsa_core_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture behavioral of entity xil_defaultlib.reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg [\reg(reg_width=257)\]
+Compiling architecture behavioral of entity xil_defaultlib.Montgomery_product [montgomery_product_default]
+Compiling architecture behavioral of entity xil_defaultlib.MonPro_control_path [monpro_control_path_default]
+Compiling architecture rtl of entity xil_defaultlib.MonPro [monpro_default]
+Compiling architecture behavioral of entity xil_defaultlib.rsa_modexp [rsa_modexp_default]
+Compiling architecture rtl of entity xil_defaultlib.rsa_core [rsa_core_default]
+Compiling architecture behavioral of entity xil_defaultlib.rsa_core_tb
+Built simulation snapshot rsa_core_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 943.535 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 3 ms
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 943.535 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/tb_mon_expo.vhd
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'rsa_core_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj rsa_core_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/rsa_core_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rsa_core_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 91b9267eb12847098834f19c071e9069 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot rsa_core_tb_behav xil_defaultlib.rsa_core_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture behavioral of entity xil_defaultlib.reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg [\reg(reg_width=257)\]
+Compiling architecture behavioral of entity xil_defaultlib.Montgomery_product [montgomery_product_default]
+Compiling architecture behavioral of entity xil_defaultlib.MonPro_control_path [monpro_control_path_default]
+Compiling architecture rtl of entity xil_defaultlib.MonPro [monpro_default]
+Compiling architecture behavioral of entity xil_defaultlib.rsa_modexp [rsa_modexp_default]
+Compiling architecture rtl of entity xil_defaultlib.rsa_core [rsa_core_default]
+Compiling architecture behavioral of entity xil_defaultlib.rsa_core_tb
+Built simulation snapshot rsa_core_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "rsa_core_tb_behav -key {Behavioral:sim_1:Functional:rsa_core_tb} -tclbatch {rsa_core_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source rsa_core_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'rsa_core_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 943.535 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 3 ms
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 944.277 ; gain = 0.742
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top rsa_modexp_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'rsa_modexp_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj rsa_modexp_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/tb_mon_expo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rsa_modexp_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 91b9267eb12847098834f19c071e9069 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot rsa_modexp_tb_behav xil_defaultlib.rsa_modexp_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2666] formal port msgin_last has no actual or default value [C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/rsa_modexp.vhd:56]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit rsa_modexp_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 944.277 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'rsa_modexp_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj rsa_modexp_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/tb_mon_expo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rsa_modexp_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 91b9267eb12847098834f19c071e9069 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot rsa_modexp_tb_behav xil_defaultlib.rsa_modexp_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture behavioral of entity xil_defaultlib.reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.reg [\reg(reg_width=257)\]
+Compiling architecture behavioral of entity xil_defaultlib.Montgomery_product [montgomery_product_default]
+Compiling architecture behavioral of entity xil_defaultlib.MonPro_control_path [monpro_control_path_default]
+Compiling architecture rtl of entity xil_defaultlib.MonPro [monpro_default]
+Compiling architecture behavioral of entity xil_defaultlib.rsa_modexp [rsa_modexp_default]
+Compiling architecture bench of entity xil_defaultlib.rsa_modexp_tb
+Built simulation snapshot rsa_modexp_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim/xsim.dir/rsa_modexp_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim/xsim.dir/rsa_modexp_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Nov 25 10:30:59 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 56.258 ; gain = 0.945
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov 25 10:30:59 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 944.277 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/edit_rsa_accelerator/edit_rsa_accelerator.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "rsa_modexp_tb_behav -key {Behavioral:sim_1:Functional:rsa_modexp_tb} -tclbatch {rsa_modexp_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source rsa_modexp_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'rsa_modexp_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 944.277 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 3 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 944.277 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 25 10:32:20 2018...

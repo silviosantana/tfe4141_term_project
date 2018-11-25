@@ -65,3 +65,198 @@ ipx::update_checksums [ipx::current_core]
 ipx::save_core [ipx::current_core]
 update_ip_catalog -rebuild -repo_path c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator
 close_sim
+launch_simulation
+source rsa_core_tb.tcl
+restart
+run 3 ms
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top core_tbfkin2 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source core_tbfkin2.tcl
+restart
+run 3 ms
+run 3 ms
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top rsa_core_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 19 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top core_tbfkin2 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source core_tbfkin2.tcl
+restart
+run 3 ms
+run 3 ms
+run 3 ms
+run 3 ms
+run 3 ms
+close_sim
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/silvi/workspace/rsa_core_testbench/rsa_core_testbench.vhd
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top rsa_core_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source rsa_core_testbench.tcl
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 100 us
+run 1 ms
+restart
+run 1 ms
+run 10 ms
+relaunch_sim
+restart
+run 2 ms
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 2 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top rsa_core_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source rsa_core_tb.tcl
+restart
+run 3 ms
+relaunch_sim
+restart
+run 3 ms
+close_sim
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/tb_mon_expo.vhd
+update_compile_order -fileset sim_1
+launch_simulation
+source rsa_core_tb.tcl
+restart
+run 3 ms
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top rsa_modexp_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+source rsa_modexp_tb.tcl
+restart
+run 3 ms
+close_sim

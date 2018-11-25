@@ -79,10 +79,10 @@ stimulus: process
   begin
   
     -- Put initialisation code here
-    key_e_d     <=  std_logic_vector(to_unsigned(10, 256));
-    key_n       <=  std_logic_vector(to_unsigned(13, 256));
-    r_mod_n     <=  std_logic_vector(to_unsigned(3, 256));
-    r2_mod_n    <=  std_logic_vector(to_unsigned(9, 256));
+    key_e_d     <=  x"0000000000000000000000000000000000000000000000000000000000010001";
+    key_n       <=  x"99925173ad65686715385ea800cd28120288fc70a9bc98dd4c90d676f8ff768d";
+    r_mod_n     <=  x"666dae8c529a9798eac7a157ff32d7edfd77038f56436722b36f298907008973";
+    r2_mod_n    <=  x"56ddf8b43061ad3dbcd1757244d1a19e2e8c849dde4817e55bb29d1c20c06364";
     start_write  <= '0';
     start_read  <= '0';
     
@@ -153,7 +153,8 @@ end process clocking;
         end if;
         
     when SEND_1 =>
-        msgin_data  <=  std_logic_vector(to_unsigned(7, 256));
+        --msgin_data  <=  std_logic_vector(to_unsigned(7, 256));
+        msgin_data  <=  x"0a23232323232323232323232323232323232323232323232323232323232323";
         msgin_valid  <= '1';
         msgin_last <= '0';
                 
@@ -164,7 +165,8 @@ end process clocking;
         end if;
         
     when SEND_2 =>
-        msgin_data  <=  std_logic_vector(to_unsigned(2564, 256));
+        --msgin_data  <=  std_logic_vector(to_unsigned(2564, 256));
+        msgin_data  <=  x"0a232020207478742e6e695f307470203a2020202020202020202020454d414e";
         msgin_valid  <= '1';
         msgin_last <= '0';
                 
@@ -175,7 +177,8 @@ end process clocking;
         end if;
     
     when SEND_3 =>
-        msgin_data  <=  std_logic_vector(to_unsigned(2465451, 256));
+        --msgin_data  <=  std_logic_vector(to_unsigned(2465451, 256));
+        msgin_data  <=  x"0a2320202020202020202020203336203a2020544e554f43204547415353454d";
         msgin_valid  <= '1';
         msgin_last <= '0';
                 
@@ -186,7 +189,8 @@ end process clocking;
         end if;
 
     when SEND_4 =>
-        msgin_data  <=  std_logic_vector(to_unsigned(788912, 256));
+        --msgin_data  <=  std_logic_vector(to_unsigned(788912, 256));
+        msgin_data  <=  x"0a2320202020202020202041307830203a464c20726f662065646f6320786548";
         msgin_valid  <= '1';
         msgin_last <= '0';
                 

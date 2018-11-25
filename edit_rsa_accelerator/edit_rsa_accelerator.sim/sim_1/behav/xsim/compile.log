@@ -1,9 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/Montgomery_product.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity reg
-INFO: [VRFC 10-307] analyzing entity Montgomery_product
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/Mon_Pro_control.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MonPro_control_path
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/MonPro.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity MonPro
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/rsa_modexp.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity rsa_modexp
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/rsa_accelerator/hdl/tb_mon_expo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity rsa_modexp_tb

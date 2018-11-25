@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sun Nov 25 00:20:53 2018
-# Process ID: 8312
+# Start of session at: Sun Nov 25 08:41:27 2018
+# Process ID: 11504
 # Current directory: C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.runs/rsa_soc_rsa_accelerator_0_0_synth_1
 # Command line: vivado.exe -log rsa_soc_rsa_accelerator_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rsa_soc_rsa_accelerator_0_0.tcl
 # Log file: C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.runs/rsa_soc_rsa_accelerator_0_0_synth_1/rsa_soc_rsa_accelerator_0_0.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 7220 
+INFO: Helper process launched with PID 8888 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 388.895 ; gain = 100.324
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 389.238 ; gain = 98.695
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'rsa_soc_rsa_accelerator_0_0' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ip/rsa_soc_rsa_accelerator_0_0/synth/rsa_soc_rsa_accelerator_0_0.vhd:92]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
@@ -26,68 +26,68 @@ INFO: [Synth 8-638] synthesizing module 'rsa_soc_rsa_accelerator_0_0' [c:/Users/
 	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M00_AXIS_START_COUNT bound to: 32 - type: integer 
 	Parameter C_BLOCK_SIZE bound to: 256 - type: integer 
-INFO: [Synth 8-3491] module 'rsa_accelerator' declared at 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_accelerator.vhd:16' bound to instance 'U0' of component 'rsa_accelerator' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ip/rsa_soc_rsa_accelerator_0_0/synth/rsa_soc_rsa_accelerator_0_0.vhd:184]
-INFO: [Synth 8-638] synthesizing module 'rsa_accelerator' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_accelerator.vhd:82]
+INFO: [Synth 8-3491] module 'rsa_accelerator' declared at 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_accelerator.vhd:16' bound to instance 'U0' of component 'rsa_accelerator' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ip/rsa_soc_rsa_accelerator_0_0/synth/rsa_soc_rsa_accelerator_0_0.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'rsa_accelerator' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_accelerator.vhd:82]
 	Parameter C_BLOCK_SIZE bound to: 256 - type: integer 
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 8 - type: integer 
 	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M00_AXIS_START_COUNT bound to: 32 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'rsa_regio' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_regio.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'rsa_regio' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_regio.vhd:113]
 	Parameter C_BLOCK_SIZE bound to: 256 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 8 - type: integer 
-WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_regio.vhd:306]
-INFO: [Synth 8-256] done synthesizing module 'rsa_regio' (1#1) [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_regio.vhd:113]
-INFO: [Synth 8-638] synthesizing module 'rsa_msgin' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_msgin.vhd:69]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_regio.vhd:306]
+INFO: [Synth 8-256] done synthesizing module 'rsa_regio' (1#1) [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_regio.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'rsa_msgin' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_msgin.vhd:69]
 	Parameter C_BLOCK_SIZE bound to: 256 - type: integer 
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'rsa_msgin' (2#1) [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_msgin.vhd:69]
-INFO: [Synth 8-638] synthesizing module 'rsa_msgout' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_msgout.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'rsa_msgin' (2#1) [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_msgin.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'rsa_msgout' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_msgout.vhd:61]
 	Parameter C_BLOCK_SIZE bound to: 256 - type: integer 
 	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_START_COUNT bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'rsa_msgout' (3#1) [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_msgout.vhd:61]
-INFO: [Synth 8-638] synthesizing module 'rsa_core' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_core.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'rsa_msgout' (3#1) [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_msgout.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'rsa_core' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_core.vhd:70]
 	Parameter C_BLOCK_SIZE bound to: 256 - type: integer 
 	Parameter C_BLOCK_SIZE bound to: 256 - type: integer 
-INFO: [Synth 8-3491] module 'rsa_modexp' declared at 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_modexp.vhd:36' bound to instance 'ModExp_0' of component 'rsa_modexp' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_core.vhd:246]
-INFO: [Synth 8-638] synthesizing module 'rsa_modexp' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_modexp.vhd:79]
+INFO: [Synth 8-3491] module 'rsa_modexp' declared at 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_modexp.vhd:36' bound to instance 'ModExp_0' of component 'rsa_modexp' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_core.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'rsa_modexp' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_modexp.vhd:79]
 	Parameter C_BLOCK_SIZE bound to: 256 - type: integer 
-WARNING: [Synth 8-614] signal 'r2_mod_n' is read in the process but is not in the sensitivity list [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_modexp.vhd:223]
-INFO: [Synth 8-638] synthesizing module 'MonPro' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/MonPro.vhd:48]
-INFO: [Synth 8-638] synthesizing module 'Montgomery_product' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/Montgomery_product.vhd:93]
+WARNING: [Synth 8-614] signal 'r2_mod_n' is read in the process but is not in the sensitivity list [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_modexp.vhd:224]
+INFO: [Synth 8-638] synthesizing module 'MonPro' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/MonPro.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'Montgomery_product' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/Montgomery_product.vhd:93]
 	Parameter reg_width bound to: 256 - type: integer 
-INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/Montgomery_product.vhd:35' bound to instance 'A_sreg' of component 'reg' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/Montgomery_product.vhd:123]
-INFO: [Synth 8-638] synthesizing module '\reg ' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/Montgomery_product.vhd:49]
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/Montgomery_product.vhd:35' bound to instance 'A_sreg' of component 'reg' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/Montgomery_product.vhd:123]
+INFO: [Synth 8-638] synthesizing module '\reg ' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/Montgomery_product.vhd:49]
 	Parameter reg_width bound to: 256 - type: integer 
-INFO: [Synth 8-256] done synthesizing module '\reg ' (4#1) [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/Montgomery_product.vhd:49]
+INFO: [Synth 8-256] done synthesizing module '\reg ' (4#1) [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/Montgomery_product.vhd:49]
 	Parameter reg_width bound to: 256 - type: integer 
-INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/Montgomery_product.vhd:35' bound to instance 'B_reg' of component 'reg' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/Montgomery_product.vhd:133]
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/Montgomery_product.vhd:35' bound to instance 'B_reg' of component 'reg' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/Montgomery_product.vhd:133]
 	Parameter reg_width bound to: 257 - type: integer 
-INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/Montgomery_product.vhd:35' bound to instance 'U_sreg' of component 'reg' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/Montgomery_product.vhd:143]
-INFO: [Synth 8-638] synthesizing module 'reg__parameterized2' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/Montgomery_product.vhd:49]
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/Montgomery_product.vhd:35' bound to instance 'U_sreg' of component 'reg' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/Montgomery_product.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'reg__parameterized2' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/Montgomery_product.vhd:49]
 	Parameter reg_width bound to: 257 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'reg__parameterized2' (4#1) [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/Montgomery_product.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'reg__parameterized2' (4#1) [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/Montgomery_product.vhd:49]
 	Parameter reg_width bound to: 256 - type: integer 
-INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/Montgomery_product.vhd:35' bound to instance 'P_reg' of component 'reg' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/Montgomery_product.vhd:156]
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/Montgomery_product.vhd:35' bound to instance 'P_reg' of component 'reg' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/Montgomery_product.vhd:156]
 	Parameter reg_width bound to: 256 - type: integer 
-INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/Montgomery_product.vhd:35' bound to instance 'n_reg' of component 'reg' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/Montgomery_product.vhd:166]
-INFO: [Synth 8-256] done synthesizing module 'Montgomery_product' (5#1) [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/Montgomery_product.vhd:93]
-INFO: [Synth 8-638] synthesizing module 'MonPro_control_path' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/Mon_Pro_control.vhd:56]
-WARNING: [Synth 8-614] signal 'counter' is read in the process but is not in the sensitivity list [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/Mon_Pro_control.vhd:74]
-INFO: [Synth 8-256] done synthesizing module 'MonPro_control_path' (6#1) [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/Mon_Pro_control.vhd:56]
-INFO: [Synth 8-256] done synthesizing module 'MonPro' (7#1) [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/MonPro.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'rsa_modexp' (8#1) [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_modexp.vhd:79]
+INFO: [Synth 8-3491] module 'reg' declared at 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/Montgomery_product.vhd:35' bound to instance 'n_reg' of component 'reg' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/Montgomery_product.vhd:166]
+INFO: [Synth 8-256] done synthesizing module 'Montgomery_product' (5#1) [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/Montgomery_product.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'MonPro_control_path' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/Mon_Pro_control.vhd:56]
+WARNING: [Synth 8-614] signal 'counter' is read in the process but is not in the sensitivity list [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/Mon_Pro_control.vhd:79]
+INFO: [Synth 8-256] done synthesizing module 'MonPro_control_path' (6#1) [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/Mon_Pro_control.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'MonPro' (7#1) [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/MonPro.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'rsa_modexp' (8#1) [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_modexp.vhd:79]
 	Parameter C_BLOCK_SIZE bound to: 256 - type: integer 
-INFO: [Synth 8-3491] module 'rsa_modexp' declared at 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_modexp.vhd:36' bound to instance 'ModExp_1' of component 'rsa_modexp' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_core.vhd:263]
+INFO: [Synth 8-3491] module 'rsa_modexp' declared at 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_modexp.vhd:36' bound to instance 'ModExp_1' of component 'rsa_modexp' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_core.vhd:263]
 	Parameter C_BLOCK_SIZE bound to: 256 - type: integer 
-INFO: [Synth 8-3491] module 'rsa_modexp' declared at 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_modexp.vhd:36' bound to instance 'ModExp_2' of component 'rsa_modexp' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_core.vhd:282]
+INFO: [Synth 8-3491] module 'rsa_modexp' declared at 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_modexp.vhd:36' bound to instance 'ModExp_2' of component 'rsa_modexp' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_core.vhd:282]
 	Parameter C_BLOCK_SIZE bound to: 256 - type: integer 
-INFO: [Synth 8-3491] module 'rsa_modexp' declared at 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_modexp.vhd:36' bound to instance 'ModExp_3' of component 'rsa_modexp' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_core.vhd:299]
-INFO: [Synth 8-256] done synthesizing module 'rsa_core' (9#1) [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_core.vhd:70]
-INFO: [Synth 8-256] done synthesizing module 'rsa_accelerator' (10#1) [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_accelerator.vhd:82]
+INFO: [Synth 8-3491] module 'rsa_modexp' declared at 'c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_modexp.vhd:36' bound to instance 'ModExp_3' of component 'rsa_modexp' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_core.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'rsa_core' (9#1) [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_core.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'rsa_accelerator' (10#1) [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_accelerator.vhd:82]
 INFO: [Synth 8-256] done synthesizing module 'rsa_soc_rsa_accelerator_0_0' (11#1) [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ip/rsa_soc_rsa_accelerator_0_0/synth/rsa_soc_rsa_accelerator_0_0.vhd:92]
 WARNING: [Synth 8-3331] design rsa_msgin has unconnected port S_AXIS_TSTRB[3]
 WARNING: [Synth 8-3331] design rsa_msgin has unconnected port S_AXIS_TSTRB[2]
@@ -100,7 +100,7 @@ WARNING: [Synth 8-3331] design rsa_regio has unconnected port S_AXI_ARPROT[2]
 WARNING: [Synth 8-3331] design rsa_regio has unconnected port S_AXI_ARPROT[1]
 WARNING: [Synth 8-3331] design rsa_regio has unconnected port S_AXI_ARPROT[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 454.289 ; gain = 165.719
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 454.898 ; gain = 164.355
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -113,10 +113,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 454.289 ; gain = 165.719
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 454.898 ; gain = 164.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 454.289 ; gain = 165.719
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 454.898 ; gain = 164.355
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -129,22 +129,22 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 WARNING: [Constraints 18-5210] No constraint will be written out.
-Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 868.418 ; gain = 10.086
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 870.180 ; gain = 10.832
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:36 ; elapsed = 00:00:50 . Memory (MB): peak = 868.418 ; gain = 579.848
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 870.180 ; gain = 579.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:36 ; elapsed = 00:00:51 . Memory (MB): peak = 868.418 ; gain = 579.848
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 870.180 ; gain = 579.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:51 . Memory (MB): peak = 868.418 ; gain = 579.848
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 870.180 ; gain = 579.637
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'MonPro_control_path'
 INFO: [Synth 8-5546] ROM "counter" won't be mapped to RAM because it is too sparse
@@ -185,8 +185,8 @@ INFO: [Synth 8-5544] ROM "next_state_m1" won't be mapped to Block RAM because ad
                     five |                              101 |                              101
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'sequential' in module 'MonPro_control_path'
-WARNING: [Synth 8-327] inferring latch for variable 'count_overflow_reg' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/Mon_Pro_control.vhd:79]
-WARNING: [Synth 8-327] inferring latch for variable 'counter_reg' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/Mon_Pro_control.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'count_overflow_reg' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/Mon_Pro_control.vhd:84]
+WARNING: [Synth 8-327] inferring latch for variable 'counter_reg' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/Mon_Pro_control.vhd:83]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -205,7 +205,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'counter_reg' [c:/Users/silv
                      six |                    1000000000000 |                             1100
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'one-hot' in module 'rsa_modexp'
-WARNING: [Synth 8-327] inferring latch for variable 'w_m2_reg' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_modexp.vhd:235]
+WARNING: [Synth 8-327] inferring latch for variable 'w_m2_reg' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_modexp.vhd:236]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -214,12 +214,12 @@ WARNING: [Synth 8-327] inferring latch for variable 'w_m2_reg' [c:/Users/silvi/D
             start_monexp |                               10 |                               10
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_m1_reg' using encoding 'sequential' in module 'rsa_core'
-WARNING: [Synth 8-327] inferring latch for variable 'monexp_idle_reg' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_core.vhd:157]
-WARNING: [Synth 8-327] inferring latch for variable 'monexp_msgvalid_reg' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_core.vhd:173]
-WARNING: [Synth 8-327] inferring latch for variable 'msgout_data_reg' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_core.vhd:174]
-WARNING: [Synth 8-327] inferring latch for variable 'msgout_last_reg' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/707f/hdl/rsa_core.vhd:175]
+WARNING: [Synth 8-327] inferring latch for variable 'monexp_idle_reg' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_core.vhd:157]
+WARNING: [Synth 8-327] inferring latch for variable 'monexp_msgvalid_reg' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_core.vhd:173]
+WARNING: [Synth 8-327] inferring latch for variable 'msgout_data_reg' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_core.vhd:174]
+WARNING: [Synth 8-327] inferring latch for variable 'msgout_last_reg' [c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ipshared/6df0/hdl/rsa_core.vhd:175]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:54 . Memory (MB): peak = 868.418 ; gain = 579.848
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 870.180 ; gain = 579.637
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -518,7 +518,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0i_1/u_r
 INFO: [Synth 8-3886] merging instance 'U0i_1/u_rsa_regio/axi_bresp_reg[0]' (FDRE) to 'U0i_1/u_rsa_regio/axi_bresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0i_1/u_rsa_regio/\axi_bresp_reg[1] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:23 . Memory (MB): peak = 868.418 ; gain = 579.848
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:58 . Memory (MB): peak = 870.180 ; gain = 579.637
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -533,13 +533,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:23 ; elapsed = 00:01:42 . Memory (MB): peak = 868.418 ; gain = 579.848
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:12 . Memory (MB): peak = 870.180 ; gain = 579.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:23 ; elapsed = 00:01:42 . Memory (MB): peak = 868.418 ; gain = 579.848
+Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:12 . Memory (MB): peak = 870.180 ; gain = 579.637
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -554,7 +554,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:29 ; elapsed = 00:01:48 . Memory (MB): peak = 868.418 ; gain = 579.848
+Finished Technology Mapping : Time (s): cpu = 00:01:04 ; elapsed = 00:01:17 . Memory (MB): peak = 870.180 ; gain = 579.637
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -578,7 +578,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:34 ; elapsed = 00:01:52 . Memory (MB): peak = 868.418 ; gain = 579.848
+Finished IO Insertion : Time (s): cpu = 00:01:08 ; elapsed = 00:01:20 . Memory (MB): peak = 870.180 ; gain = 579.637
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -591,7 +591,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:34 ; elapsed = 00:01:53 . Memory (MB): peak = 868.418 ; gain = 579.848
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:08 ; elapsed = 00:01:20 . Memory (MB): peak = 870.180 ; gain = 579.637
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -603,25 +603,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:37 ; elapsed = 00:01:56 . Memory (MB): peak = 868.418 ; gain = 579.848
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:10 ; elapsed = 00:01:23 . Memory (MB): peak = 870.180 ; gain = 579.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:37 ; elapsed = 00:01:56 . Memory (MB): peak = 868.418 ; gain = 579.848
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:11 ; elapsed = 00:01:23 . Memory (MB): peak = 870.180 ; gain = 579.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:39 ; elapsed = 00:01:58 . Memory (MB): peak = 868.418 ; gain = 579.848
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:12 ; elapsed = 00:01:24 . Memory (MB): peak = 870.180 ; gain = 579.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:39 ; elapsed = 00:01:58 . Memory (MB): peak = 868.418 ; gain = 579.848
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:12 ; elapsed = 00:01:25 . Memory (MB): peak = 870.180 ; gain = 579.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -700,11 +700,11 @@ Report Instance Areas:
 |42    |    u_rsa_regio               |rsa_regio              |  1763|
 +------+------------------------------+-----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:39 ; elapsed = 00:01:58 . Memory (MB): peak = 868.418 ; gain = 579.848
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:12 ; elapsed = 00:01:25 . Memory (MB): peak = 870.180 ; gain = 579.637
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 271 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:09 ; elapsed = 00:01:24 . Memory (MB): peak = 868.418 ; gain = 165.719
-Synthesis Optimization Complete : Time (s): cpu = 00:01:40 ; elapsed = 00:01:58 . Memory (MB): peak = 868.418 ; gain = 579.848
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:01:05 . Memory (MB): peak = 870.180 ; gain = 164.355
+Synthesis Optimization Complete : Time (s): cpu = 00:01:12 ; elapsed = 00:01:25 . Memory (MB): peak = 870.180 ; gain = 579.637
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 456 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -717,15 +717,15 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 83 Infos, 121 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:51 ; elapsed = 00:02:12 . Memory (MB): peak = 909.023 ; gain = 626.957
+synth_design: Time (s): cpu = 00:01:21 ; elapsed = 00:01:36 . Memory (MB): peak = 907.234 ; gain = 624.102
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.runs/rsa_soc_rsa_accelerator_0_0_synth_1/rsa_soc_rsa_accelerator_0_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 909.023 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 907.234 ; gain = 0.000
 INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.srcs/sources_1/bd/rsa_soc/ip/rsa_soc_rsa_accelerator_0_0/rsa_soc_rsa_accelerator_0_0.xci
 INFO: [Coretcl 2-1174] Renamed 41 cell refs.
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/silvi/Desktop/tfe4141_term_project/tfe4141_term_project/term_project/term_project.runs/rsa_soc_rsa_accelerator_0_0_synth_1/rsa_soc_rsa_accelerator_0_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 909.023 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 907.234 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file rsa_soc_rsa_accelerator_0_0_utilization_synth.rpt -pb rsa_soc_rsa_accelerator_0_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.361 . Memory (MB): peak = 909.023 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Nov 25 00:23:46 2018...
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.444 . Memory (MB): peak = 907.234 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 25 08:43:52 2018...
